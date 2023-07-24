@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color text Changer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h4 id="h1"></h4>
+    <script>
+        function set(){
+    setTimeout((()=> {
+        document.body.style.background = "linear-gradient(90deg,red,blue)"
+       document.body.style.backgroundSize = "cover"
+        document.getElementById("h1").innerHTML= "Rock on baby😊";
+    }),400);
+    setTimeout((()=> {
+        document.body.style.background = "linear-gradient(45deg,green,yellow)"
+       document.body.style.backgroundSize = "cover"
+        document.getElementById("h1").innerHTML= "Rock the party baby🤞";
+    }),800);
+    setTimeout((()=> {
+        document.body.style.background="linear-gradient(90deg,orange,white)"
+       document.body.style.backgroundSize = "cover"
+        document.getElementById("h1").innerHTML= "Let Rock 😊";
+    }),1200);
+    setTimeout((()=> {
+        document.body.style.background = "linear-gradient(90deg,black,silver)"
+       document.body.style.backgroundSize = "cover"
+        document.getElementById("h1").innerHTML= "Rock on baby😜";
+    }),1600);
+}
+  
+setInterval(set,1600)
+    </script>
+</body>
+</html>
